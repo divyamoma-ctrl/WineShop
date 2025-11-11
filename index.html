@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Font awswam cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!--Fancybox css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
+    />
+
+    <!-- Swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!--AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <section class="header-sec">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container nav-container">
+          <div class="nav-logo">
+            <a class="navbar-brand" href="index.html">
+              <img src="./assets/home/nav-logo.png" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+            <button
+              class="offcanvas-header"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-circle-xmark cross"></i>
+            </button>
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">Our Team</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="nav-right d-flex align-items-center">
+              <div class="cart d-flex align-items-center">
+                <a href="">
+                  <img src="./assets/home/cart.png" />
+                </a>
+                <div class="count">0</div>
+              </div>
+              <div class="nav-three-bar-icon">
+                <a href=""><img src="./assets/home/name-right-frame.png" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Banner Section -->
+
+    <section class="banner-sec">
+      <div class="container banner-container">
+        <div class="row bnr-row">
+          <!-- Left content -->
+          <div class="col-12 col-lg-6">
+            <div class="banner-left-cntn">
+              <div class="subtitle1">Tastes Like Heaven</div>
+              <!-- <h1 class="title1">DISCOVER</h1>
+              <h2 class="sub-title2">PLENTY OF</h2>
+              <h2 class="sub-title3">WINERIES</h2> -->
+
+              <h1 class="title1"> DISCOVER
+                <span class="title">PLENTY OF</span>
+                <span class="titlee">WINERIES</span>
+              </h1>
+              <div class="banner-btn">
+                <a href="#" class="primary-btn">DISCOVER</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="bnr-right-cntn-wrpr">
+              <div class="swiper-pagination"></div>
+              <div class="bottle-img">
+                <img src="./assets/home/bnr-btl-img.png" />
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/home/,,.png" class="quote" />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur Proin sed vel
+                      elementum in tristique egestas neque. Viverra bibendum
+                      nisl ut condimentum porta.
+                    </p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="./assets/home/,,.png" class="quote" />
+                    <p>
+                      This is the second paragraph. This content is now visible
+                      after the swipe action. It is built with a focus on
+                      performance and flexibility.
+                    </p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="./assets/home/,,.png" class="quote" />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur Proin sed vel
+                      elementum in tristique egestas neque. Viverra bibendum
+                      nisl ut condimentum porta.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- New -->
+
+          <!------>
+        </div>
+      </div>
+    </section>
+
+    <!-- Isotope Section -->
+    <section class="isotope-sec">
+      <div class="container iso-container">
+        <div class="for-shadow">
+        <div class="button-group filter-button-group">
+          <button class="btn all" id="all" data-filter="*">All</button>
+          <button class="btn beverage" id="beverage" data-filter=".beverage">
+            Beverage
+          </button>
+          <button class="btn blanco" id="blanco" data-filter=".blanco">
+            Blanco
+          </button>
+          <button class="btn liqueur" id="liqueur" data-filter=".liqueur">
+            Liqueur
+          </button>
+          <button class="btn nero" id="nero" data-filter=".nero">Nero</button>
+          <button
+            class="btn sparkiling"
+            id="sparkiling"
+            data-filter=".sparkiling"
+          >
+            Sparkiling
+          </button>
+          <button class="btn wine" id="wine" data-filter=".wine">Wine</button>
+        </div>
+
+        <!--Card Sec -->
+        <div class="grid">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+            <div class="col">
+              <div class="card h-100 iso-card wine">
+                <img src="./assets/home/Frame 54.png" class="card-img-top" />
+
+                <div class="iso-card-body">
+                  <h5 class="card-title">TUSCANY MAIN</h5>
+                  <p class="iso-card-text">
+                    Lorem ipsum dolor sit amet consectetur..
+                  </p>
+                  <div class="price">$51.00</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 iso-card beverage">
+                <img
+                  src="/assets/home/Frame 55.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="iso-card-body">
+                  <h5 class="card-title">TUSCANY <span>MAIN</span></h5>
+                  <p class="iso-card-text">
+                    Lorem ipsum dolor sit amet consectetur..
+                  </p>
+                  <div class="price">$51.00</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 iso-card wine">
+                <img
+                  src="./assets/home/Frame 56.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="iso-card-body">
+                  <h5 class="card-title">TUSCANY <span>MAIN</span></h5>
+                  <p class="iso-card-text">
+                    Lorem ipsum dolor sit amet consectetur..
+                  </p>
+                  <div class="price">$51.00</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 iso-card beverage">
+                <img
+                  src="./assets/home/Frame 57.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="iso-card-body">
+                  <h5 class="card-title">TUSCANY <span>MAIN</span></h5>
+                  <p class="iso-card-text">
+                    Lorem ipsum dolor sit amet consectetur..
+                  </p>
+                  <div class="price">$51.00</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 iso-card beverage">
+                <img
+                  src="./assets/home/Frame 54.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="iso-card-body">
+                  <h5 class="card-title">TUSCANY <span>MAIN</span></h5>
+                  <p class="iso-card-text">
+                    Lorem ipsum dolor sit amet consectetur..
+                  </p>
+                  <div class="price">$51.00</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 iso-card blanco">
+                <img
+                  src="./assets/home/Frame 55.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="iso-card-body">
+                  <h5 class="card-title">TUSCANY <span>MAIN</span></h5>
+                  <p class="iso-card-text">
+                    Lorem ipsum dolor sit amet consectetur..
+                  </p>
+                  <div class="price">$51.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Test Section -->
+    <section class="taste-sec">
+      <div class="container taste-container">
+        <div class="taste-hdr">Lorem ipsum dolor sit amet consectetur.</div>
+        <h2 class="title2">Where can you taste our drinks</h2>
+        <a href="/shop.html" class="shop-btn"> Shop now </a>
+      </div>
+    </section>
+
+    <!-- Region Section -->
+
+    <section class="region-sec">
+      <div class="region-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-lg-6 place">
+              <div class="toskana-wrpr">
+                <div class="toskana-map">
+                  <img src="./assets/home/map1.png" />
+                  <div class="toskana-pointer-group"  id="toscana-pointer">
+                    <div class="toskana-pin"></div>
+                
+                <div class="toskana-line"></div>
+                  <!-- <div class="toskana-circle">
+                    <img src="./assets/Ellipse 3.png" alt="" />
+                  </div>
+                  <div class="toskana-line">
+                     <img src="./assets/home/Line 1.png" alt="" /> 
+                  </div> -->
+                  <div class="toskana-cntn">
+                    <div class="toskana-hdr">TOSCANA</div>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 place">
+              <div class="napavalley-wrpr">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="napa-cntn">
+                  NAPA VALLEY IS THE MOST FAMOUS WINEMAKING REGION IN PIEMONTE
+                  REGION
+                </div>
+                <a class="discover-btn" href="">DISCOVER</a>
+                <div class="napa-img">
+                  <img src="./assets/home/napa_village.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Receipes Section -->
+    <section class="recepies-sec">
+      <div class="container receipies-container">
+        <div class="recipie-desin-img">
+          <img src="./assets/home/receipie-design.png" />
+        </div>
+        <div class="recepies-hdr">
+          <div class="recepies-sub-hdr fs-6">
+            Lorem ipsum dolor sit amet consectetur.
+          </div>
+          <h2 class="title3">THE BEST RECIPES AND OLD TRADITION</h2>
+        </div>
+
+        <!-- for cards -->
+
+        <div
+          class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4"
+        >
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/home/Mask group (34).png"
+                class="card-img-top"
+                alt="..."
+              />
+
+              <div class="card-body">
+                <div class="date">APR 20 - LEONA LOWIS - WINES</div>
+                <h4 class="title4">WINE DELIGHT</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur. Facilisis dui proin
+                  mattis dictum nulla. Facilisis nisl in vel adipiscing proin.
+                </p>
+                <a href="" class="read">READ MORE</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/home/Mask group (35).png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="date">APR 20 - LEONA LOWIS - WINES</div>
+                <h4 class="title4">WINE DELIGHT</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur. Facilisis dui proin
+                  mattis dictum nulla. Facilisis nisl in vel adipiscing proin.
+                </p>
+                <a href="" class="read">READ MORE</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/home/Mask group (36).png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="date">APR 20 - LEONA LOWIS - WINES</div>
+                <h4 class="title4">WINE DELIGHT</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur. Facilisis dui proin
+                  mattis dictum nulla. Facilisis nisl in vel adipiscing proin.
+                </p>
+                <a href="" class="read">READ MORE</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="/assets/home/Mask group (37).png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <div class="date">APR 20 - LEONA LOWIS - WINES</div>
+                <h4 class="title4">WINE DELIGHT</h4>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur. Facilisis dui proin
+                  mattis dictum nulla. Facilisis nisl in vel adipiscing proin.
+                </p>
+                <a href="" class="read">READ MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Whisky-selection Section-->
+    <section class="selection-sec">
+      <div class="container">
+        <div class="selection-cntn" data-aos="fade-up" data-aos-duration="1500">
+          <h3 class="title3">WHISKEYN SELECTION</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Winetype card section -->
+    <section class="winetype-card-sec">
+      <div class="container-fluid p-0">
+        <div class="row row-cols-1 row-cols-lg-2 g-0 winetype-row">
+          <div class="col">
+            <div class="card h-100 border-0 left-card">
+              <div class="card-img3">
+                <img
+                  src="./assets/home/Single Vineyard 1.png"
+                  class="card-img-top3"
+                  alt="Card 1"
+                />
+              </div>
+              <div
+                class="card-body3"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <h5 class="card-title3">HANDMADE</h5>
+                <p class="card-text3">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 border-0 right-card">
+              <div class="card-img3">
+                <img
+                  src="./assets/home/Frame 13.png"
+                  class="card-img-top3"
+                  alt="Card 2"
+                />
+              </div>
+              <div
+                class="card-body3"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
+                <h5 class="card-title3">SPECIAL EDT</h5>
+                <p class="card-text3">
+                  Lorem ipsum dolor sit amet consectetur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wine-type Section -->
+    <section class="wintype-sec">
+      <div class="container wine-type-container">
+        <div class="wine-type-design">
+          <img src="./assets/home/wine-type-design.png" />
+        </div>
+        <div class="row wine-type-row">
+          <div class="col-12 col-xl-6">
+            <div class="winetype-left-cntn">
+              <div class="wintype-img"  data-aos="zoom-in-up"
+              data-aos-duration="2000">
+                <img src="./assets/home/wine-type-img.png" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6">
+            <div class="winetype-right-cntn">
+              <div class="winetype-name">
+                <div class="winetype-logo">
+                  <img src="./assets/home/Vector (7).png " />
+                </div>
+                <div class="winetype-cntn">
+                  <h4 class="title4">MUSCAT</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+              </div>
+              <div class="winetype-name">
+                <div class="winetype-logo">
+                  <img src="./assets/home/Vector (8).png " />
+                </div>
+                <div class="winetype-cntn">
+                  <h4 class="title4">DRY WINE</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+              </div>
+              <div class="winetype-name">
+                <div class="winetype-logo">
+                  <img src="./assets/home/Vector (9).png " />
+                </div>
+                <div class="winetype-cntn">
+                  <h4 class="title4">DINNER</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="contact-sec">
+      <div class="container contact-container">
+        <div class="row contact-row">
+          <div class="col-12 col-xl-6">
+            <div class="contact-left-cntn">
+              <div class="c-para">Lorem ipsum dolor sit amet consectetur.</div>
+              <div class="contact-form">
+                <div class="title3">GET IN TOUCH & MEET GREAT IN PERSON</div>
+                <form action="">
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="input-field"
+                    placeholder="Full Name*"
+                  />
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    class="input-field"
+                    placeholder="E-mail*"
+                  />
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="20"
+                    rows="3"
+                    class="input-field"
+                    placeholder="Message"
+                  >
+                  </textarea>
+                  <input type="submit" value="SEND" class="send-btn" />
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-6 mx-auto">
+            <div class="contact-right-cntn">
+              <div class="map-img"  data-aos="zoom-in-up" data-aos-duration="2000">
+                <img
+                  src="./assets/home/map-img.png"
+                  alt="Map"
+                  class="img"
+                  id="openMap"
+                />
+              </div>
+              <div class="map-cntn">
+                <a href="" class="contact-info"> CONTACT INFO</a>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <section class="footer-sec">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <a href="index.html">
+              <img src="./assets/home/footer-logo.png" />
+            </a>
+          </div>
+
+          <div class="row footer-row">
+            <div class="col-12 col-md-6">
+              <div class="foot-hdr">
+                <a href="" class="foot-link fs-4 fw-bold"> ORDERS </a>
+              </div>
+              <ul>
+                <li>
+                  <a href="" class="f-link fs-6">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="f-link phone fs-5">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="f-link fs-6">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 for-align">
+              <div class="foot-hdr">
+                <a href="" class="foot-link fs-4 fw-bold"> CONTACT </a>
+              </div>
+              <ul>
+                <li>
+                  <a href="" class="f-link fs-6">
+                    Lorem ipsum dolor sit amet consectetur.
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="f-link phone fs-8">
+                    +1234000021 +4321000012 +0000543210
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="f-link fs-6"> Lorem ipsum@gmail.com </a>
+                </li>
+              </ul>
+              <div class="social-link">
+                <ul class="d-flex justify-content-end">
+                  <li>
+                    <a href="" class="social-icon">
+                      <img src="./assets/home/ins.png" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="social-icon">
+                      <img src="./assets/home/wa.png" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="social-icon">
+                      <img src="./assets/home/ffb.png" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-btm">
+          <div class="row">
+            <div class="col-12 col-md-4 f-btm">
+              <a href="" class="privacy f-btm">Privacy Policy</a>
+            </div>
+            <div class="col-12 col-md-4 copy-div">
+              <a href="" class="copyright f-btm"
+                >Copyright@Qade Interactive 2025</a
+              >
+            </div>
+            <div class="col-12 col-md-4 text-end">
+              <p>Impresun</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Fancybox js -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Isotope Js cdn-->
+    <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script> -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--Normal Js -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
