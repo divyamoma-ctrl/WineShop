@@ -38,7 +38,7 @@ ul {
   max-width: 1800px; /* 1789+30 */
 }
 
-span {
+.gradient {
   background-image: linear-gradient(
     to right,
     var(--linear-grad1),
@@ -244,6 +244,97 @@ span {
   object-fit: cover;
 }
 
+/* Footer Section */
+.footer-top-sec {
+  padding: 100px 0 20px 0;
+  background-color: var(--btn-text-color);
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to left, var(--tertiary-color), black) 1;
+  /* border-top: 1px solid;
+  border-image: linear-gradient(to left, var(--tertiary-color), black) 1; */
+}
+
+.footer-logo > a {
+  width: 108px;
+  margin: 0 auto 30px;
+  text-align: center;
+  display: block;
+}
+
+.footer-logo > a > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.foot-link {
+  color: var(--tertiary-color);
+}
+
+.f-link {
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
+
+.f-link:hover {
+  color: var(--linear-grad1);
+}
+
+ul {
+  padding: 0;
+}
+
+.foot-hdr {
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+}
+
+.footer-btm-sec {
+  background-color: var(--btn-text-color);
+  padding-block: 30px;
+}
+
+.social-icon {
+  width: 20px;
+  margin-left: 10px;
+  transition: 0.3s linear;
+}
+
+.social-icon > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+}
+.for-align {
+  text-align: end;
+}
+
+/* .footer-top {
+  margin-bottom: 20px;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to left, var(--tertiary-color), black) 1;
+} */
+
+.privacy,
+.copyright,
+.text-end {
+  color: var(--primary-color);
+}
+
+.copyright {
+  text-align: center !important;
+}
+
+.copy-div {
+  text-align: center;
+}
+
+.f-btm:hover {
+  color: var(--linear-grad1);
+}
 
 /*---- Media Quary---- */
 
@@ -285,13 +376,71 @@ span {
   }
 }
 
+@media screen and (max-width: 768px) {
+  /* footer-sec */
+  .footer-row .col-md-6 {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .social-link > ul {
+    justify-content: center !important;
+    font-size: 16px;
+  }
+
+  .f-btm,
+  .text-end {
+    text-align: center !important;
+    font-size: 12px !important;
+  }
+}
+
 @media screen and (max-width: 576px) {
   /* people section */
   .title2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .name {
     font-size: 20px;
+  }
+
+  /* Footer-sec */
+
+  .footer-sec {
+    padding: 40px 0 20px;
+  }
+  .footer-logo > a > img {
+    width: 70px;
+  }
+
+  .foot-hdr {
+    font-size: 18px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .foot-link {
+    font-size: 18px !important;
+  }
+
+  .f-link {
+    font-size: 12px !important;
+    margin-bottom: 10px;
+  }
+
+  .phone {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* Footer-sec */
+
+  .footer-sec {
+    padding-block: 30px;
+  }
+
+  .footer-logo > a > img {
+    width: 50px;
   }
 }

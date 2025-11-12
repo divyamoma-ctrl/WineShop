@@ -97,7 +97,7 @@ ul {
   transition: scale(1.01);
 }
 
-span {
+.gradient {
   background-image: linear-gradient(
     to right,
     var(--linear-grad1),
@@ -221,16 +221,6 @@ span {
   color: var(--primary-color);
 }
 
-span {
-  background-image: linear-gradient(
-    to right,
-    var(--linear-grad1),
-    var(--linear-grad2)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 /* Banner section */
 

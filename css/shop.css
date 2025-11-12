@@ -59,7 +59,7 @@ ul {
   max-width: 807px;
 }
 
-span {
+.gradient {
   background-image: linear-gradient(
     to right,
     var(--linear-grad1),
