@@ -23,6 +23,10 @@ body {
   --linear-grad2: #ffffff;
   --linear-grad3: #ffab5e;
   --gray-color: #141414;
+  --animation-duration: 12s;
+  --total-items: 6;
+  --animation-duration2: 12s;
+  --total-item2: 4;
 }
 
 a {
@@ -182,7 +186,7 @@ ul {
     var(--linear-grad1),
     var(--linear-grad2)
   );
-    background-clip: text;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -376,13 +380,101 @@ ul {
   object-fit: cover;
 }
 
+/* ---------Our Client Section---------- */
+
+.client-sec {
+  padding-block: 60px;
+  background-color: var(--btn-text-color);
+  position: relative;
+}
+
+.client {
+  text-align: center;
+}
+
+.sponsor-sec {
+  padding: 50px 0;
+  background-color: var(--tertiary-color);
+}
+
+.item {
+  animation: rightToLeft var(--animation-duration) linear infinite;
+  position: absolute;
+}
+
+.item2 {
+  animation: leftToRight var(--animation-duration2) linear infinite;
+  position: absolute;
+}
+
+.auto-scroll {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scroll-img {
+  width: 100px;
+}
+
+.scroll-img > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.big-img {
+  width: 180px;
+}
+
+.auto-scroll {
+  padding: 10px 20px;
+  position: relative;
+  height: 120px;
+}
+
+@keyframes rightToLeft {
+  0% {
+    right: -10%;
+  }
+
+  100% {
+    right: 110%;
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    left: -10%;
+  }
+
+  100% {
+    left: 110%;
+  }
+}
+
+.client-design {
+  max-width: 400px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.client-design {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*-------------------------------------*/
+
 /* Footer Section */
 .footer-top-sec {
   padding: 100px 0 20px 0;
   background-color: var(--btn-text-color);
   border-bottom: 1px solid;
   border-image: linear-gradient(to left, var(--tertiary-color), black) 1;
-   border-top: 1px solid;
+  border-top: 1px solid;
   border-image: linear-gradient(to left, var(--tertiary-color), black) 1;
 }
 
