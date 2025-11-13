@@ -627,6 +627,12 @@ ul {
     letter-spacing: 2px;
   }
 
+  /* Client Section */
+
+  .scroll-img {
+    width: 80px;
+  }
+
   /* footer-sec */
   .footer-row .col-md-6 {
     text-align: center;
@@ -695,6 +701,12 @@ ul {
     font-size: 13px;
   }
 
+  /* Client Section */
+
+  .scroll-img {
+    width: 60px;
+  }
+
   /* Footer-sec */
 
   .footer-sec {
@@ -724,6 +736,11 @@ ul {
 }
 
 @media screen and (max-width: 425px) {
+  /* Client Section */
+
+  .scroll-img {
+    width: 45px;
+  }
   /* Footer-sec */
 
   .footer-sec {

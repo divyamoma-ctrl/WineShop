@@ -3,6 +3,10 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
           loop: true,
     grabcursor: true,
+      autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
    
     // Breakpoints : 
     

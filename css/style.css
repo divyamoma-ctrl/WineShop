@@ -108,6 +108,24 @@ ul {
   -webkit-text-fill-color: transparent;
 }
 
+/* Pre-Loader */
+
+#pre-loader {
+  /* background: black url(../assets/home/onload-gif-3.gif) no-repeat center/cover; */
+  /* background: black url(../assets/home/wine-glass\ gif.gif) no-repeat center/cover; */
+  /* background: black url(../assets/home/gif.jpg) no-repeat
+    center/cover; */
+
+  background: black url(../assets/home/glass-wine-glass.gif) no-repeat
+    center/cover;
+
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
 /* Header Section */
 
 .header-sec {
@@ -220,7 +238,6 @@ ul {
 .cross {
   color: var(--primary-color);
 }
-
 
 /* Banner section */
 
@@ -657,7 +674,6 @@ ul {
   height: 100vh;
 }
 
-
 /* To point on map */
 
 /* -----------end section----- */
@@ -772,34 +788,29 @@ ul {
 
 /* --For Shadow-- */
 .recepies-sec {
- 
   position: relative;
   z-index: 10;
 }
 
 .recepies-sec::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 5;
-  
-  
-  bottom: -150px; 
-  right: -150px;  
-  
-  
-  width: 600px; 
+
+  bottom: -150px;
+  right: -150px;
+
+  width: 600px;
   height: 200px;
   border-radius: 50%;
-  
+
   /* 7. The Glow Effect */
-  background-color: #a76e28; 
-  filter: blur(250px); 
-  opacity: 0.3; 
+  background-color: #a76e28;
+  filter: blur(250px);
+  opacity: 0.3;
 }
 
-
 /*----------------------*/
-
 
 /* Whisky-selection-section */
 
@@ -900,9 +911,6 @@ ul {
 }
 
 /* For Shadow */
-
-
-
 
 /* Wine-type Section */
 
@@ -1711,5 +1719,148 @@ ul {
   /* region Section */
   .napavalley-wrpr > p {
     text-align: end;
+  }
+}
+
+/*----- Log in Pop Up after pageloading --------- */
+.login_popup {
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+  position: fixed; /* ✅ Overlay across screen */
+  top: 0;
+  left: 0;
+  display: flex; /* ✅ Centers .box easily */
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6); /* ✅ Dim background */
+  visibility: hidden; /* ✅ Hidden by default */
+  opacity: 0;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  z-index: 999;
+}
+
+.login_popup.anyname {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Popup box */
+.login_popup .box {
+  /* background-color: rgb(0, 0, 0); */
+  background-color: rgb(34, 32, 28);
+  /* filter: blur(20px); */
+  border: 1px solid;
+  padding: 20px 45px;
+  border-radius: 20px;
+  position: relative; /* ✅ relative so .close stays inside */
+  transform: translateY(-20px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.login_popup.anyname .box {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Inputs */
+.popup_input {
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(71, 69, 69);
+  font-size: 15px;
+  background: transparent;
+}
+
+.popup_input:focus {
+  outline: none;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+.login_btn {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 8px;
+  padding: 8px;
+  border: none;
+  text-transform: uppercase;
+  background-color: var(--tertiary-color);
+}
+
+.login_btn:hover {
+  background-color: #a76e28;
+  transition: 0.3s linear;
+}
+
+.pop_para {
+  font-size: 14px;
+  /* color: #67615d; */
+  color: #aeaeae;
+  margin-bottom: 30px;
+}
+
+h4 {
+  margin-top: 30px;
+  text-align: center;
+  color: var(--primary-color);
+  font-family: "mont", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.fa-wine-glass-empty {
+  font-size: 20px;
+  color: var(--linear-grad1);
+}
+
+label {
+  font-size: 13px;
+  color: #ded3cc;
+}
+
+.popup_input::placeholder {
+  color: #a7a19b;
+  font-size: 12px;
+  opacity: 1; /* Firefox adds lower opacity by default */
+}
+
+@media screen and (max-width: 576px) {
+  /* signin pop up */
+
+  .login_popup .box {
+    padding: 20px 30px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  .pop_para {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .popup_input {
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .login_btn {
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 20px;
   }
 }

@@ -39,6 +39,8 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- Loader -->
+    <div id="pre-loader"></div>
     <!-- Header Section -->
     <section class="header-sec">
       <nav class="navbar navbar-expand-lg">
@@ -82,7 +84,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="team.html">Our Team</a>
               </li>
-               <li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link" href="blog.html">Blog</a>
               </li>
               <li class="nav-item">
@@ -118,7 +120,8 @@
               <h2 class="sub-title2">PLENTY OF</h2>
               <h2 class="sub-title3">WINERIES</h2> -->
 
-              <h1 class="title1"> DISCOVER
+              <h1 class="title1">
+                DISCOVER
                 <span class="title">PLENTY OF</span>
                 <span class="titlee">WINERIES</span>
               </h1>
@@ -178,131 +181,167 @@
     <section class="isotope-sec">
       <div class="container iso-container">
         <div class="for-shadow">
-        <div class="button-group filter-button-group">
-          <button class="btn all" id="all" data-filter="*">All</button>
-          <button class="btn beverage" id="beverage" data-filter=".beverage">
-            Beverage
-          </button>
-          <button class="btn blanco" id="blanco" data-filter=".blanco">
-            Blanco
-          </button>
-          <button class="btn liqueur" id="liqueur" data-filter=".liqueur">
-            Liqueur
-          </button>
-          <button class="btn nero" id="nero" data-filter=".nero">Nero</button>
-          <button
-            class="btn sparkiling"
-            id="sparkiling"
-            data-filter=".sparkiling"
-          >
-            Sparkiling
-          </button>
-          <button class="btn wine" id="wine" data-filter=".wine">Wine</button>
-        </div>
+          <div class="button-group filter-button-group">
+            <button class="btn all" id="all" data-filter="*">All</button>
+            <button class="btn beverage" id="beverage" data-filter=".beverage">
+              Beverage
+            </button>
+            <button class="btn blanco" id="blanco" data-filter=".blanco">
+              Blanco
+            </button>
+            <button class="btn liqueur" id="liqueur" data-filter=".liqueur">
+              Liqueur
+            </button>
+            <button class="btn nero" id="nero" data-filter=".nero">Nero</button>
+            <button
+              class="btn sparkiling"
+              id="sparkiling"
+              data-filter=".sparkiling"
+            >
+              Sparkiling
+            </button>
+            <button class="btn wine" id="wine" data-filter=".wine">Wine</button>
+          </div>
 
-        <!--Card Sec -->
-        <div class="grid">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-            <div class="col">
-              <div class="card h-100 iso-card wine">
-                <img src="./assets/home/Frame 54.png" class="card-img-top" />
+          <!--Card Sec -->
+          <div class="grid">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+              <div class="col">
+                <div
+                  class="card h-100 iso-card wine"
+                  data-aos="fade-top"
+                  data-aos-duration="1500"
+                >
+                  <img src="./assets/home/Frame 54.png" class="card-img-top" />
 
-                <div class="iso-card-body">
-                  <h5 class="card-title">TUSCANY <span class="gradient">MAIN</span></h5>
-                  <p class="iso-card-text">
-                    Lorem ipsum dolor sit amet consectetur..
-                  </p>
-                  <div class="price">$51.00</div>
+                  <div class="iso-card-body">
+                    <h5 class="card-title">
+                      TUSCANY <span class="gradient">MAIN</span>
+                    </h5>
+                    <p class="iso-card-text">
+                      Lorem ipsum dolor sit amet consectetur..
+                    </p>
+                    <div class="price">$51.00</div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="card h-100 iso-card beverage">
-                <img
-                  src="./assets/home/Frame 55.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="iso-card-body">
-                  <h5 class="card-title">CHINATI  <span class="gradient">CLASSICO</span></h5>
-                  <p class="iso-card-text">
-                    Lorem ipsum dolor sit amet consectetur..
-                  </p>
-                  <div class="price">$42.00</div>
+              <div class="col">
+                <div
+                  class="card h-100 iso-card beverage"
+                  data-aos="fade-top"
+                  data-aos-duration="1500"
+                >
+                  <img
+                    src="./assets/home/Frame 55.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="iso-card-body">
+                    <h5 class="card-title">
+                      CHINATI <span class="gradient">CLASSICO</span>
+                    </h5>
+                    <p class="iso-card-text">
+                      Lorem ipsum dolor sit amet consectetur..
+                    </p>
+                    <div class="price">$42.00</div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="card h-100 iso-card wine">
-                <img
-                  src="./assets/home/Frame 56.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="iso-card-body">
-                  <h5 class="card-title">VIN <span class="gradient">SANTO</span></h5>
-                  <p class="iso-card-text">
-                    Lorem ipsum dolor sit amet consectetur..
-                  </p>
-                  <div class="price">$52.00</div>
+              <div class="col">
+                <div
+                  class="card h-100 iso-card wine"
+                  data-aos="fade-top"
+                  data-aos-duration="1500"
+                >
+                  <img
+                    src="./assets/home/Frame 56.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="iso-card-body">
+                    <h5 class="card-title">
+                      VIN <span class="gradient">SANTO</span>
+                    </h5>
+                    <p class="iso-card-text">
+                      Lorem ipsum dolor sit amet consectetur..
+                    </p>
+                    <div class="price">$52.00</div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="card h-100 iso-card beverage">
-                <img
-                  src="./assets/home/Frame 57.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="iso-card-body">
-                  <h5 class="card-title">VINO <span class="gradient">NOBILE</span></h5>
-                  <p class="iso-card-text">
-                    Lorem ipsum dolor sit amet consectetur..
-                  </p>
-                  <div class="price">$62.00</div>
+              <div class="col">
+                <div
+                  class="card h-100 iso-card beverage"
+                  data-aos="fade-top"
+                  data-aos-duration="1500"
+                >
+                  <img
+                    src="./assets/home/Frame 57.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="iso-card-body">
+                    <h5 class="card-title">
+                      VINO <span class="gradient">NOBILE</span>
+                    </h5>
+                    <p class="iso-card-text">
+                      Lorem ipsum dolor sit amet consectetur..
+                    </p>
+                    <div class="price">$62.00</div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="card h-100 iso-card beverage">
-                <img
-                  src="./assets/home/Frame 54.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="iso-card-body">
-                  <h5 class="card-title">BOLGHERI  <span class="gradient">DOC</span></h5>
-                  <p class="iso-card-text">
-                    Lorem ipsum dolor sit amet consectetur..
-                  </p>
-                  <div class="price">$42.00</div>
+              <div class="col">
+                <div
+                  class="card h-100 iso-card beverage"
+                  data-aos="fade-top"
+                  data-aos-duration="1500"
+                >
+                  <img
+                    src="./assets/home/Frame 54.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="iso-card-body">
+                    <h5 class="card-title">
+                      BOLGHERI <span class="gradient">DOC</span>
+                    </h5>
+                    <p class="iso-card-text">
+                      Lorem ipsum dolor sit amet consectetur..
+                    </p>
+                    <div class="price">$42.00</div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col">
-              <div class="card h-100 iso-card blanco">
-                <img
-                  src="./assets/home/Frame 55.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="iso-card-body">
-                  <h5 class="card-title">SAN <span class="gradient">GIMINGANO</span></h5>
-                  <p class="iso-card-text">
-                    Lorem ipsum dolor sit amet consectetur..
-                  </p>
-                  <div class="price">$55.00</div>
+              <div class="col">
+                <div
+                  class="card h-100 iso-card blanco"
+                  data-aos="fade-top"
+                  data-aos-duration="1500"
+                >
+                  <img
+                    src="./assets/home/Frame 55.png"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="iso-card-body">
+                    <h5 class="card-title">
+                      SAN <span class="gradient">GIMINGANO</span>
+                    </h5>
+                    <p class="iso-card-text">
+                      Lorem ipsum dolor sit amet consectetur..
+                    </p>
+                    <div class="price">$55.00</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </section>
@@ -310,8 +349,12 @@
     <!-- Test Section -->
     <section class="taste-sec">
       <div class="container taste-container">
-        <div class="taste-hdr">Lorem ipsum dolor sit amet consectetur.</div>
-        <h2 class="title2">Where can you taste our drinks</h2>
+        <div class="taste-hdr" data-aos="fade-top" data-aos-duration="1500">
+          Lorem ipsum dolor sit amet consectetur.
+        </div>
+        <h2 class="title2" data-aos="fade-right" data-aos-duration="1500">
+          Where can you taste our drinks
+        </h2>
         <a href="shop.html" class="shop-btn"> Shop now </a>
       </div>
     </section>
@@ -324,22 +367,26 @@
           <div class="row">
             <div class="col-12 col-lg-6 place">
               <div class="toskana-wrpr">
-                <div class="toskana-map">
+                <div
+                  class="toskana-map"
+                  data-aos="zoom-in"
+                  data-aos-duration="2000"
+                >
                   <img src="./assets/home/map1.png" />
-                  <div class="toskana-pointer-group"  id="toscana-pointer">
+                  <div class="toskana-pointer-group" id="toscana-pointer">
                     <div class="toskana-pin"></div>
-                
-                <div class="toskana-line"></div>
-                  <!-- <div class="toskana-circle">
+
+                    <div class="toskana-line"></div>
+                    <!-- <div class="toskana-circle">
                     <img src="./assets/Ellipse 3.png" alt="" />
                   </div>
                   <div class="toskana-line">
                      <img src="./assets/home/Line 1.png" alt="" /> 
                   </div> -->
-                  <div class="toskana-cntn">
-                    <div class="toskana-hdr">TOSCANA</div>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                  </div>
+                    <div class="toskana-cntn">
+                      <div class="toskana-hdr">TOSCANA</div>
+                      <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -352,7 +399,11 @@
                   REGION
                 </div>
                 <a class="discover-btn" href="">DISCOVER</a>
-                <div class="napa-img">
+                <div
+                  class="napa-img"
+                  data-aos="zoom-out"
+                  data-aos-duration="2000"
+                >
                   <img src="./assets/home/napa_village.png" alt="" />
                 </div>
               </div>
@@ -368,7 +419,11 @@
         <div class="recipie-desin-img">
           <img src="./assets/home/receipie-design.png" />
         </div>
-        <div class="recepies-hdr">
+        <div
+          class="recepies-hdr"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
           <div class="recepies-sub-hdr fs-6">
             Lorem ipsum dolor sit amet consectetur.
           </div>
@@ -381,7 +436,7 @@
           class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4"
         >
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up" data-aos-duration="1500">
               <img
                 src="./assets/home/Mask group (34).png"
                 class="card-img-top"
@@ -401,7 +456,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up" data-aos-duration="1500">
               <img
                 src="./assets/home/Mask group (35).png"
                 class="card-img-top"
@@ -420,7 +475,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up" data-aos-duration="1500">
               <img
                 src="./assets/home/Mask group (36).png"
                 class="card-img-top"
@@ -439,7 +494,7 @@
           </div>
 
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up" data-aos-duration="1500">
               <img
                 src="./assets/home/Mask group (37).png"
                 class="card-img-top"
@@ -530,8 +585,11 @@
         <div class="row wine-type-row">
           <div class="col-12 col-xl-6">
             <div class="winetype-left-cntn">
-              <div class="wintype-img"  data-aos="zoom-in-up"
-              data-aos-duration="2000">
+              <div
+                class="wintype-img"
+                data-aos="zoom-in-up"
+                data-aos-duration="2000"
+              >
                 <img src="./assets/home/wine-type-img.png" />
               </div>
             </div>
@@ -612,7 +670,11 @@
           </div>
           <div class="col-12 col-xl-6 mx-auto">
             <div class="contact-right-cntn">
-              <div class="map-img"  data-aos="zoom-in-up" data-aos-duration="2000">
+              <div
+                class="map-img"
+                data-aos="zoom-out-up"
+                data-aos-duration="2000"
+              >
                 <img
                   src="./assets/home/map-img.png"
                   alt="Map"
@@ -723,6 +785,38 @@
       </div>
     </section>
 
+    <!--- Log in pop up -->
+
+    <div class="login_popup" id="popup_form">
+      <div class="box">
+        <div class="form">
+          <div class="close" id="close_btn">&times;</div>
+          <h4>WELCOME</h4>
+          <p class="pop_para">Please Enter Your Details To Sign In</p>
+          <div class="form-group">
+            <input
+              type="text"
+              id="field_id"
+              placeholder="Enter Your Email"
+              class="popup_input"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              id="field_id"
+              placeholder="Enter Your Password"
+              class="popup_input"
+            />
+          </div>
+          <div class="form-group">
+            <label> <input type="checkbox" /> Remember me </label>
+          </div>
+          <button class="login_btn">Sign in</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -748,5 +842,28 @@
 
     <!--Normal Js -->
     <script src="./js/script.js"></script>
+
+    <script>
+      // Pre Loader
+      var loader = document.getElementById("pre-loader");
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          loader.style.display = "none";
+        }, 3000);
+      });
+
+      //Login Pop Up
+      var popup_login = document.getElementById("popup_form");
+      var close = document.getElementById("close_btn");
+
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          popup_login.classList.add("anyname");
+        }, 8000);
+      });
+      close.addEventListener("click", function () {
+        popup_login.classList.remove("anyname");
+      });
+    </script>
   </body>
 </html>

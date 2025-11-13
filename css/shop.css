@@ -285,6 +285,15 @@ ul {
   cursor: pointer;
 }
 
+.price-filter input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background: var(--border-color, #b59773);
+  cursor: pointer;
+}
+
 .p-card {
   margin-bottom: 30px;
 }
