@@ -245,6 +245,9 @@ ul {
   background: url(../assets/home/banner-bg-new.png) no-repeat center/cover;
   min-height: 100vh;
   padding-block: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bnr-row {
@@ -448,10 +451,6 @@ ul {
   margin-bottom: 30px;
 }
 
-.iso-card {
-  max-width: 32.448vw;
-}
-
 .iso-card-body {
   text-align: center;
 }
@@ -507,10 +506,9 @@ ul {
 /* Test Section */
 
 .taste-sec {
-  padding-block: 100px;
+  padding-block: 120px;
   background: linear-gradient(to right, #cc9b70, rgba(0, 0, 0, 0)),
     url("../assets/home/test-img.png") no-repeat center/cover;
-  min-height: 100vh;
   position: relative;
 }
 
@@ -554,13 +552,13 @@ ul {
 
 .toskana-wrpr {
   background: url(../assets/home/black-bg.png) no-repeat center/cover;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 2;
-  padding: 15px;
+  padding: 40px;
 }
 
 .place {
@@ -583,7 +581,7 @@ ul {
 .napavalley-wrpr {
   background: #aeaeae;
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: end;
@@ -670,8 +668,35 @@ ul {
   left: 38%;
 }
 /* ---- */
+
+/* New addition */
+/* Make both columns equal height */
 .region-section .row {
-  height: 100vh;
+  display: flex;
+  align-items: stretch;
+}
+
+/* Make each column flexible */
+.region-section .row .place {
+  display: flex;
+}
+
+/* Left column (Toscana) */
+.toskana-wrpr {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Right column (Napa Valley) */
+.napavalley-wrpr {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* To point on map */
@@ -686,10 +711,9 @@ ul {
 }
 
 .recepies-sec {
-  padding-block: 86px;
+  padding-block: 120px;
   background-color: var(--gray-color);
   position: relative;
-  min-height: 100vh;
 }
 
 .recipie-desin-img {
@@ -848,14 +872,12 @@ ul {
 }
 
 .card {
-  max-width: 900px;
   border-radius: 0;
   position: relative;
   overflow: hidden;
 }
 
 .card-img3 {
-  max-width: 900px;
   overflow: hidden;
 }
 
@@ -915,7 +937,7 @@ ul {
 /* Wine-type Section */
 
 .wintype-sec {
-  padding-block: 200px;
+  padding-block: 150px;
   background-color: var(--gray-color);
   background-image: linear-gradient(to right, var(--linear-grad1), transition);
   position: relative;
@@ -1038,8 +1060,8 @@ ul {
 
 .contact-sec {
   background: url("../assets/home/contact-bg.png") no-repeat center/cover;
-  min-height: 100vh;
-  padding-block: 200px;
+
+  padding-block: 120px;
 }
 
 .contact-row {
@@ -1349,10 +1371,10 @@ ul {
     height: auto;
   }
 
-  .toskana-wrpr,
+  /* .toskana-wrpr,
   .napavalley-wrpr {
-    min-height: 100vh; /* Optional if you want each section full height individually */
-  }
+    min-height: 100vh; 
+  } */
 
   .napa-cntn {
     font-size: 26px;
@@ -1719,148 +1741,5 @@ ul {
   /* region Section */
   .napavalley-wrpr > p {
     text-align: end;
-  }
-}
-
-/*----- Log in Pop Up after pageloading --------- */
-.login_popup {
-  width: 100%;
-  height: 100%;
-  padding: 40px 20px;
-  position: fixed; /* ✅ Overlay across screen */
-  top: 0;
-  left: 0;
-  display: flex; /* ✅ Centers .box easily */
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.6); /* ✅ Dim background */
-  visibility: hidden; /* ✅ Hidden by default */
-  opacity: 0;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
-  z-index: 999;
-}
-
-.login_popup.anyname {
-  visibility: visible;
-  opacity: 1;
-}
-
-/* Popup box */
-.login_popup .box {
-  /* background-color: rgb(0, 0, 0); */
-  background-color: rgb(34, 32, 28);
-  /* filter: blur(20px); */
-  border: 1px solid;
-  padding: 20px 45px;
-  border-radius: 20px;
-  position: relative; /* ✅ relative so .close stays inside */
-  transform: translateY(-20px);
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.login_popup.anyname .box {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-/* Inputs */
-.popup_input {
-  margin-bottom: 20px;
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid rgb(71, 69, 69);
-  font-size: 15px;
-  background: transparent;
-}
-
-.popup_input:focus {
-  outline: none;
-}
-
-/* Close button */
-.close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 28px;
-  cursor: pointer;
-  color: #333;
-}
-
-.login_btn {
-  width: 100%;
-  margin-top: 30px;
-  border-radius: 8px;
-  padding: 8px;
-  border: none;
-  text-transform: uppercase;
-  background-color: var(--tertiary-color);
-}
-
-.login_btn:hover {
-  background-color: #a76e28;
-  transition: 0.3s linear;
-}
-
-.pop_para {
-  font-size: 14px;
-  /* color: #67615d; */
-  color: #aeaeae;
-  margin-bottom: 30px;
-}
-
-.welcome {
-  margin-top: 30px;
-  text-align: center;
-  color: var(--primary-color);
-  font-family: "mont", sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-}
-
-.fa-wine-glass-empty {
-  font-size: 20px;
-  color: var(--linear-grad1);
-}
-
-label {
-  font-size: 13px;
-  color: #ded3cc;
-}
-
-.popup_input::placeholder {
-  color: #a7a19b;
-  font-size: 12px;
-  opacity: 1; /* Firefox adds lower opacity by default */
-}
-
-@media screen and (max-width: 576px) {
-  /* signin pop up */
-
-  .login_popup .box {
-    padding: 20px 30px;
-  }
-
-  .welcome {
-    font-size: 24px;
-  }
-
-  .pop_para {
-    font-size: 12px;
-    margin-bottom: 20px;
-  }
-
-  .popup_input {
-    margin-bottom: 10px;
-  }
-
-  label {
-    font-size: 12px;
-  }
-
-  .login_btn {
-    padding: 5px;
-    font-size: 14px;
-    margin-top: 20px;
   }
 }

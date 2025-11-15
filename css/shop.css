@@ -274,6 +274,11 @@ ul {
   font-size: 15px;
 }
 
+.sortitem-btn:hover {
+  transition: 0.2s linear;
+  color: var(--linear-grad1);
+}
+
 /* Base range input styling */
 .price-filter input[type="range"] {
   width: 80%;
@@ -330,6 +335,7 @@ ul {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .fa-magnifying-glass {
