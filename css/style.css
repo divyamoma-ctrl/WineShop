@@ -530,7 +530,7 @@ a.login-btn {
   color: var(--primary-color);
   font-weight: bold;
   max-width: 660px;
-  font-size: 90px;
+  font-size: 80px;
 
   margin-bottom: 44px;
 }
@@ -1762,6 +1762,8 @@ ul {
   pointer-events: none;
   backdrop-filter: blur(5px);
   transition: 0.1s ease;
+  z-index: 999;
+ 
 }
 
 .show-popup .blur-bg-overlay {
@@ -1781,7 +1783,7 @@ ul {
   pointer-events: none;
   border: 1px solid #151212;
   border-radius: 10px;
-  z-index: 99;
+  z-index: 9999;
   background: url(../assets/home/form-7-copy.jpg) no-repeat center/cover;
 }
 
