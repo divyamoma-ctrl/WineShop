@@ -926,6 +926,31 @@
       setTimeout(() => {
         document.body.classList.add("show-popup");
       }, 5000);
+
+      //To stop scrolling whewn popup appears
+
+      function openPopup() {
+        // Get the body element and the form popup element
+        const body = document.body;
+        const formPopup = document.querySelector(".form-popup");
+
+        // 1. Show the popup (using existing CSS logic)
+        formPopup.classList.add("show-popup");
+
+        // 2. DISABLE SCROLLING (New step)
+        body.classList.add("show-popup");
+      }
+
+      function closePopup() {
+        const body = document.body;
+        const formPopup = document.querySelector(".form-popup");
+
+        // 1. Hide the popup
+        formPopup.classList.remove("show-popup");
+
+        // 2. ENABLE SCROLLING
+        body.classList.remove("show-popup");
+      }
     </script>
   </body>
 </html>

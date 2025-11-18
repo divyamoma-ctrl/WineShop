@@ -2025,3 +2025,9 @@ ul {
   backdrop-filter: blur(5px);
   transition: 0.1s ease;
 }
+
+/* Disable scrolling on the body when the popup is active */
+body.show-popup {
+  overflow: hidden;
+  height: 100vh; 
+}
