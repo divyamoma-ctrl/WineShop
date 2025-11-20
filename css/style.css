@@ -1760,10 +1760,10 @@ ul {
   height: 100%;
   opacity: 0;
   pointer-events: none;
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
+  background: rgba(0, 0, 0, 0.6);
   transition: 0.1s ease;
   z-index: 999;
- 
 }
 
 .show-popup .blur-bg-overlay {
@@ -2014,7 +2014,7 @@ ul {
 
 /* for overlay */
 
-.blur-bg-overlay {
+/* .blur-bg-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -2023,11 +2023,12 @@ ul {
   opacity: 0;
   pointer-events: none;
   backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.6);
   transition: 0.1s ease;
-}
+} */
 
 /* Disable scrolling on the body when the popup is active */
 body.show-popup {
   overflow: hidden;
-  height: 100vh; 
+  height: 100vh;
 }
